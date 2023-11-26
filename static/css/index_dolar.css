@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(13, 85, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+body form {
+    background-color: rgb(5, 94, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 80%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+body form h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+body form label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+body form input {
+    padding: 10px;
+    font-size: 15px;
+    background: none;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    border-style: solid;
+    margin-top: 10px;
+    font-weight: bolder;
+    border-color: white;
+}
+
+body form input::placeholder{
+    color: white;
+    font-weight: bolder;
+}
+
+body form button{
+    background: none;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border-style: solid;
+    color: white;
+    font-weight: bolder;
+    border-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body form button:hover{
+    background-color: rgb(11, 61, 11);
+    padding: 10px;
+}
+
+
+body .info-session{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+body .info-time{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+}

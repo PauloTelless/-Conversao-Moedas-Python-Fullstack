@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/index_euro.css') }}">
+    <title>Conversão para Euro</title>
+</head>
+<body>
+    <body>
+        <form action="http://127.0.0.1:5000/converterbrleur" method="POST">
+            <h1>Conversão para Euro</h1>
+            
+            <label>Valor em EUR</label>
+            <input type="text" id="valor_usuario_real" name="valor_usuario_real" placeholder="Digite o valor" required autocomplete="off">
+            <button type="submit">Converter</button>
+            
+
+            {% if valor %}
+            <div class="info-session">
+                {{ valor }}EUR = {{valor_convertido_euro}}BRL
+            </div>
+    
+            <div class="info-time">
+                <p>
+                    Cotação de: {{data_atualizacao_euro}}
+                </p>
+            </div>
+            {% endif  %}
+        </form>
+    </body>
+</body>
+</html>

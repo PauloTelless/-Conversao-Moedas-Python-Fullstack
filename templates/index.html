@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Cotação</title>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Escolha a moeda</h1>
+        <form action="http://127.0.0.1:5000/brltousd" method="POST">
+            <button type="submit">Dólar</button>
+        </form>
+
+        <form action="http://127.0.0.1:5000/brltoeur" method="POST">
+            <button type="submit">Euro</button>
+        </form>
+
+        <form action="http://127.0.0.1:5000/btctobrl" method="POST">
+            <button type="submit">Bitcoin</button>
+        </form>
+    </div>
+</body>
+</html>

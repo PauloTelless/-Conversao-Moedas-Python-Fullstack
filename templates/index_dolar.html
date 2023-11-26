@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_dolar.css') }}">
+    <title>Conversão para Dólar</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/converterbrlusd" method="POST">
+        <h1>Conversão para Dólar</h1>
+        
+        <label>Valor em USD</label>
+        <input type="text" id="valor_usuario_real" name="valor_usuario_real" placeholder="Digite o valor" required autocomplete="off">
+        <button type="submit">Converter</button>
+        
+        {%if valor %}
+            <div class="info-session">
+                {{ valor }}USD = {{valor_convertido_dolar}}BRL
+            </div>
+
+            <div class="info-time">
+                <p>
+                    Cotação de: {{data_atualizacao_dolar}}
+                </p>
+            </div>
+        {% endif %}
+    </form>
+</body>
+</html>
